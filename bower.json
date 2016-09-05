@@ -1,0 +1,24 @@
+{
+  "name": "webpacktut",
+  "description": "Webpack Training",
+  "main": "index.js",
+  "authors": [
+    "Marvin Arcilla"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Webpack"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}

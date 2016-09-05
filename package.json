@@ -12,7 +12,6 @@
   "author": "Marvin Arcilla",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.1.0",
     "lodash": "^4.15.0"
   },
   "devDependencies": {

@@ -1,2 +1,3 @@
-require("./mod1.js");
-require("./mod2.js");
+require("./mod1");
+require("./mod2");
+require("./mod3");
