@@ -23,5 +23,10 @@ module.exports = {
 		  'bower_components'
 		]
 		// Alternatively ,root: [ './bower_components'] this gets prepended to modulesDirectories
+	},
+	module: {
+		loaders: [
+			{test: /\.less$/, loader: "style!css!less"}
+		]
 	}
 }
