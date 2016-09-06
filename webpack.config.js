@@ -1,4 +1,7 @@
 var webpack = require("webpack");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var extractLess = new ExtractTextPlugin('styles.css')
+
 
 module.exports = {
 	entry: './index.js',
@@ -7,6 +10,7 @@ module.exports = {
 		path: __dirname
 	},
 	plugins: [
+		extractLess,
 		// Instead of finding only a package.json, it will also check bower.json as well
 	    new webpack.ResolverPlugin(
 	      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
@@ -26,7 +30,8 @@ module.exports = {
 	},
 	module: {
 		loaders: [
-			{test: /\.less$/, loader: "style!css!less"}
+			{test: /\.less$/, loader: ExtractTextPlugin.extract(['css?sourceMap', 'less?sourceMap']) }
 		]
+
 	}
 }
